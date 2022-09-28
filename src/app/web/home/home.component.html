@@ -1,0 +1,83 @@
+<div fxLayout="row warp">
+  <div fxFlex="100%" fxFlex.xs="100%" class="header_section parallax"
+    style="color:white;text-align: center;background-repeat: no-repeat;background-size: cover;">
+    <div fxLayout="row warp" fxLayoutAlign="center" class="middle_center">
+      <div fxFlex="70%" fxFlex.xs="100%">
+        <div fxLayout="row warp" fxLayoutAlign="center">
+          <div fxFlex="50%" fxFlex.xs="100%" align="center">
+            <img src="./assets/images/Profile1.png" style="width: 80%" class="profile_image">
+          </div>
+          <div fxFlex="50%" fxFlex.xs="100%" style="margin: auto;" align="center">
+            <h1 data-aos="zoom-in-down" data-aos-duration="500">WUTTHIPHON TASSANA</h1>
+            <h3 data-aos="fade-up" data-aos-duration="600">วุฒิพร ทัศนา</h3>
+            <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
+              <div fxFlex="35%" fxFlex.xs="75%">
+                <button mat-stroked-button class="profile_btn full-width" data-aos="fade-up" data-aos-duration="800"
+                  (click)="scrollToElement(section_profile)">
+                  <mat-icon>ads_click</mat-icon>
+                  คลิกเพื่ออ่านประวัติส่วนตัว
+                </button>
+              </div>
+              <div fxFlex="35%" fxFlex.xs="75%">
+                <button mat-stroked-button class="profile_btn full-width" data-aos="fade-up" data-aos-duration="800"
+                  routerLink="/articles">
+                  <mat-icon>article</mat-icon>
+                  คลิกเพื่อดูบทความ
+                </button>
+              </div>
+              <div fxFlex="35%" fxFlex.xs="75%">
+                <button mat-stroked-button class="profile_btn full-width" data-aos="fade-up" data-aos-duration="800"
+                  routerLink="/credit">
+                  <mat-icon>bookmark_border</mat-icon>
+                  คลิกเพื่อดูเครดิต
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="100%" fxFlex.xs="100%" class="parallax2" #section_profile>
+    <div class="content_section">
+      <h1 data-aos="zoom-in" data-aos-duration="400">ประวัติส่วนตัว</h1>
+      <h3 data-aos="zoom-in" data-aos-duration="600">Profile</h3>
+      <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
+        <div fxFlex="35%" fxFlex.xs="100%">
+          <mat-card data-aos="zoom-in" data-aos-duration="700">
+            <mat-card-content>
+              ทดสอบ Material Card 001
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div fxFlex="35%" fxFlex.xs="100%">
+          <mat-card data-aos="zoom-in" data-aos-duration="700">
+            <mat-card-content>
+              ทดสอบ Material Card 002
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="100%" fxFlex.xs="100%" class="parallax">
+    <div class="content_section" style="color: #FFF;">
+      <h1 data-aos="zoom-in" data-aos-duration="400">พูดอะไรหน่อย</h1>
+      <h3 data-aos="zoom-in" data-aos-duration="600">Say Something</h3>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+    </div>
+  </div>
+</div>

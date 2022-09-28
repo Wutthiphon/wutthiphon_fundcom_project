@@ -1,0 +1,52 @@
+.middle_center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../../../assets/images/background/bg1.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-color: #f3f3f3;
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_section {
+  height: 100vh !important;
+  position: relative;
+}
+
+.profile_image {
+  border-radius: 25px;
+}
+
+.profile_btn {
+  border-radius: 25px;
+  border-color: white;
+  stroke: white;
+}

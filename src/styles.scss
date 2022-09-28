@@ -1,0 +1,260 @@
+/* You can add global styles to this file, and also import other style files */
+
+$background: #f3f3f3;
+$font: Kanit, sans-serif;
+
+html,
+body {
+  margin: 0;
+  font-family: $font;
+  background-color: $background;
+  scroll-behavior: smooth !important;
+  --navbar-scroll: transparent;
+}
+
+h2.swal2-title {
+  font-family: $font;
+}
+
+* {
+  font-family: $font;
+}
+
+.mat-menu-item {
+  font-family: $font;
+}
+
+.companyName {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 18pt;
+}
+
+.mat-toolbar {
+  height: 63px;
+}
+
+.app-toolbar {
+  position: fixed;
+  position: -webkit-fixed; /* For macOS/iOS Safari */
+  z-index: 100 !important; /* Ensure that your app's content doesn't overlap the toolbar */
+  // background-color: rgb(43, 136, 85);
+  color: white;
+  transition: background-color 0.25s ease;
+  background-color: var(--navbar-scroll);
+}
+
+.sidenav-link {
+  padding-top: 64px !important;
+  position: fixed !important;
+  background-color: rgba(49, 97, 71, 0.699);
+  color: white;
+  z-index: 90 !important;
+}
+
+a.sidebar-button:link {
+  color: white;
+  font-size: 12pt;
+}
+
+a {
+  font-family: $font;
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+a:link {
+  color: white;
+}
+a:active {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+
+.web-spacer {
+  flex: 1 1 auto;
+}
+
+/* mouse over link */
+.toolbar-button:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* selected link */
+.toolbar-button:link {
+  font-family: $font;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.toolbar-button > a[ng-reflect-router-link] {
+  color: rgb(255, 255, 255);
+}
+
+.sidebar-button:link {
+  text-align: left;
+  font-family: $font;
+  text-decoration: none;
+}
+
+a.sidebar-button {
+  text-align: left;
+  font-family: $font;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.main-fx {
+  // padding-top: 63px;
+  background-color: $background;
+  word-wrap: break-word;
+}
+
+.mat-button {
+  font-weight: 600;
+}
+
+h2.mat-dialog-title {
+  font-family: $font;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+p {
+  font-family: $font;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 90%;
+}
+
+.text-white {
+  color: white;
+}
+
+.primary {
+  background-color: rgb(49, 141, 106);
+  color: white;
+}
+
+.primary:disabled {
+  background-color: rgb(158, 158, 158);
+  color: rgb(179, 179, 179);
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: rgb(54, 54, 54);
+}
+
+// .mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon {
+  background-color: rgb(124, 124, 124) !important;
+}
+
+.mat-step-header .mat-step-icon-selected {
+  background-color: rgb(133, 133, 133) !important;
+}
+
+.mat-line {
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}
+
+.mat-menu-item {
+  font-family: $font;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(43, 136, 85);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(26, 95, 57);
+  border-radius: 15px;
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.mat-table {
+  overflow-y: auto;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+h2,
+h4,
+h5,
+h6 {
+  font-family: $font !important;
+  font-weight: 700;
+}
+
+.content_section {
+  margin: 80px 15px;
+  text-align: center;
+}
+
+h1 {
+  font-family: $font !important;
+  font-weight: bolder !important;
+  font-size: 35pt !important;
+  letter-spacing: 1pt !important;
+  line-height: 30pt !important;
+}
+
+h3 {
+  font-family: $font !important;
+  font-size: 20pt !important;
+}
+
+.mat-card {
+  border-radius: 20px !important;
+}
