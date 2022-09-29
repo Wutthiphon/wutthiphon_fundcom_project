@@ -51,8 +51,23 @@
   stroke: white;
 }
 
-hr{
+hr {
   height: 1px;
   background-color: #ccc;
   border: none;
+}
+
+.logo-image {
+  max-height: 100px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+
+  .mat-card {
+    display: inline-block;
+  }
 }

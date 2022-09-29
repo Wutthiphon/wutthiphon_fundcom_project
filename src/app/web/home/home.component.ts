@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from './../../services/user.service';
 import * as THREE from 'three';
 declare var VANTA: any;
 
@@ -8,9 +9,10 @@ declare var VANTA: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  award_isLoad = true;
+  allaward = new Array();
 
-  constructor() { }
-
+  constructor(public UserService: UserService) { }
 
   ngOnInit(): void {
     VANTA.NET({
@@ -27,6 +29,13 @@ export class HomeComponent implements OnInit {
       maxDistance: 23.00,
       spacing: 17.00,
       THREE: THREE
+    })
+
+    this.UserService.getAllAward().subscribe((data) => {
+      if (data.award.length > 0) {
+        this.allaward = data.award;
+        this.award_isLoad = false;
+      }
     })
   }
 
