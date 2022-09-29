@@ -5,12 +5,20 @@ var articles = [
   {
     id: 1,
     name: 'hello world',
-    description: 'dfkldfldskfldksfdsflkdlfkdlfklsdfdfksdlk'
+    description: 'hello world',
+    data: `<h1>Test</h1>`
   },
   {
     id: 2,
-    name: 'hello world 2',
-    description: 'dfkldfldskfldksfdsflkdlfkdlfklsdfdfksdlk 2'
+    name: 'hello world',
+    description: 'hello world',
+    data: `<h1>Test</h1>`
+  },
+  {
+    id: 3,
+    name: 'hello world',
+    description: 'hello world',
+    data: `<h1>Test</h1>`
   }
 ];
 
