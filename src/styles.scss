@@ -31,7 +31,7 @@ h2.swal2-title {
 }
 
 .mat-toolbar {
-  height: 63px;
+  height: 54px;
 }
 
 .app-toolbar {
@@ -45,7 +45,7 @@ h2.swal2-title {
 }
 
 .sidenav-link {
-  padding-top: 64px !important;
+  padding-top: 54px !important;
   position: fixed !important;
   background-color: rgba(49, 97, 71, 0.699);
   color: white;
@@ -227,6 +227,7 @@ input::-webkit-inner-spin-button {
 
 .container {
   margin-top: 30px;
+  height: calc(100vh - 30px);
 }
 
 h2,

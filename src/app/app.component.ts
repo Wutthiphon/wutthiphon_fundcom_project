@@ -9,6 +9,7 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   click_counter = 0;
+  in_home = false;
 
   constructor(public router: Router) { }
 
@@ -17,10 +18,12 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
         if (this.router.url == '/') {
-          window.addEventListener('scroll', this.scroll, true)
+          window.addEventListener('scroll', this.scroll, true);
+          this.in_home = true;
         } else {
-          window.removeEventListener('scroll', this.scroll, true)
-          document.body.style.setProperty('--navbar-scroll', "rgb(25, 125, 71)");
+          window.removeEventListener('scroll', this.scroll, true);
+          document.body.style.setProperty('--navbar-scroll', "#347355");
+          this.in_home = false;
         }
       }
     });
@@ -43,19 +46,22 @@ export class AppComponent implements OnInit {
 
 
     if (window.scrollY >= scrollHeigth) {
-      document.body.style.setProperty('--navbar-scroll', "rgb(25, 125, 71)");
+      document.body.style.setProperty('--navbar-scroll', "#347355");
     } else if (window.scrollY < scrollHeigth) {
       document.body.style.setProperty('--navbar-scroll', "transparent");
     }
   }
 
   color_change() {
-    if (this.click_counter == 0) {
-      document.body.style.setProperty('--navbar-scroll', "rgb(25, 125, 71)");
-      this.click_counter = 1;
-    } else {
-      document.body.style.setProperty('--navbar-scroll', "transparent");
+    if (this.in_home == true) {
       this.click_counter = 0;
+      if (this.click_counter == 0) {
+        document.body.style.setProperty('--navbar-scroll', "#347355");
+        this.click_counter = 1;
+      } else {
+        document.body.style.setProperty('--navbar-scroll', "transparent");
+        this.click_counter = 0;
+      }
     }
   }
 }
