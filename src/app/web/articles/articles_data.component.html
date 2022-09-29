@@ -1,0 +1,36 @@
+<div fxLayout="row warp" fxLayoutAlign="center">
+  <div fxFlex="80%" fxFlex.xs="100%">
+    <div class="content_section" style="text-align: left;" *ngIf="found_data">
+      <h3 data-aos="zoom-in" data-aos-duration="600">
+        <button mat-button class="primary" routerLink="/articles">
+          <mat-icon>arrow_back</mat-icon>
+          ย้อนกลับ
+        </button>
+        {{article_data.name}}
+      </h3>
+
+      <div fxLayout="row warp" fxLayoutGap="8px grid" fxLayoutAlign="center">
+        <div fxFlex="100%" fxFlex.xs="100%">
+          <mat-card data-aos="zoom-in" data-aos-duration="800">
+            {{article_data.description}}
+          </mat-card>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_section" style="text-align: center;" *ngIf="!found_data">
+      <span class="material-icons-outlined" style="font-size: 140pt;color: rgb(100, 100, 100)">
+        block
+      </span>
+
+      <p style="font-size: 16pt;">ไม่พบข้อมูล กรุณาย้อนกลับ</p>
+      <h3 data-aos="zoom-in" data-aos-duration="600">
+        <button mat-button class="primary" routerLink="/articles">
+          <mat-icon>arrow_back</mat-icon>
+          ย้อนกลับ
+        </button>
+        {{article_data.name}}
+      </h3>
+    </div>
+  </div>
+</div>

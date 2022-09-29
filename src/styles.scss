@@ -225,11 +225,6 @@ input::-webkit-inner-spin-button {
   overflow-y: auto;
 }
 
-.container {
-  margin-top: 30px;
-  height: calc(100vh - 30px);
-}
-
 h2,
 h4,
 h5,
@@ -258,4 +253,8 @@ h3 {
 
 .mat-card {
   border-radius: 20px !important;
+}
+
+button{
+  white-space: pre-wrap !important;
 }

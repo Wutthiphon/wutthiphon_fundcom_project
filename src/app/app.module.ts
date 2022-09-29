@@ -25,6 +25,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 //Components
 import { HomeComponent } from './web/home/home.component';
 import { ArticlesComponent } from './web/articles/articles.component';
+import { ArticlesDetaComponent } from './web/articles/articles.component';
 import { CreditComponent } from './web/credit/credit.component';
 import { Error404Component } from './web/errors/error404/error404.component';
 
@@ -33,6 +34,7 @@ import { Error404Component } from './web/errors/error404/error404.component';
     AppComponent,
     HomeComponent,
     ArticlesComponent,
+    ArticlesDetaComponent,
     CreditComponent,
     Error404Component,
   ],

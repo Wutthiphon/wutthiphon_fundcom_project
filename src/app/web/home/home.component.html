@@ -1,14 +1,15 @@
 <div fxLayout="row warp">
-  <div fxFlex="100%" fxFlex.xs="100%" class="header_section parallax"
+  <div fxFlex="100%" fxFlex.xs="100%" class="header_section parallax" id="home_header_section"
     style="color:white;text-align: center;background-repeat: no-repeat;background-size: cover;">
-    <div fxLayout="row warp" fxLayoutAlign="center" class="middle_center">
+    <div fxLayout="row warp" fxLayoutAlign="center" class="middle_center" fxLayoutGap="8px grid">
       <div fxFlex="70%" fxFlex.xs="100%">
         <div fxLayout="row warp" fxLayoutAlign="center">
-          <div fxFlex="50%" fxFlex.xs="100%" align="center">
-            <img src="./assets/images/Profile1.png" style="width: 80%" class="profile_image">
-          </div>
-          <div fxFlex="50%" fxFlex.xs="100%" style="margin: auto;" align="center">
-            <h1 data-aos="zoom-in-down" data-aos-duration="500">WUTTHIPHON TASSANA</h1>
+          <div fxFlex="80%" fxFlex.xs="100%" style="margin: auto;" align="center">
+
+            <img src="./assets/images/logo.png" width="80%" fxHide.gt-sm="true">
+            <img src="./assets/images/logo.png" width="30%" fxHide.lt-md="true">
+
+            <h1 data-aos="zoom-in-down" data-aos-duration="500" style="margin-top: 35px;">WUTTHIPHON TASSANA</h1>
             <h3 data-aos="fade-up" data-aos-duration="600">วุฒิพร ทัศนา</h3>
             <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
               <div fxFlex="35%" fxFlex.xs="75%">
@@ -47,21 +48,28 @@
         <div fxFlex="35%" fxFlex.xs="100%">
           <mat-card data-aos="zoom-in" data-aos-duration="700">
             <mat-card-content>
-              ทดสอบ Material Card 001
+              <iframe src="https://www.youtube.com/embed/AqSRldOUEzM" title="YouTube video player" frameborder="0"
+                width="100%" height="300px"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </mat-card-content>
           </mat-card>
         </div>
         <div fxFlex="35%" fxFlex.xs="100%" style="text-align: left;">
-          <p style="text-indent: 32px;">
+          <p style="text-indent: 32px;font-size: 14pt;margin-top: 16px;">
             ผมนายวุฒิพร ทัศนา นักศึกษามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ คณะวิทยาศาสตร์ประยุกต์
             สาขาวิทยาการคอมพิวเตอร์ (CS | COM-SCI)
           </p>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div fxFlex="100%" fxFlex.xs="100%">
-          <hr width="20%" style="margin-top: 18px;margin-bottom: 18px;">
-        </div>
-
+  <div fxFlex="100%" fxFlex.xs="100%" class="parallax">
+    <div class="content_section" style="color: #FFF;">
+      <h1 data-aos="zoom-in" data-aos-duration="400">ประวัติการศึกษา</h1>
+      <h3 data-aos="zoom-in" data-aos-duration="600">Education</h3>
+      <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
         <div fxFlex="35%" fxFlex.xs="100%">
           <p style="text-indent: 32px;">
             ประวัติการศึกษา
@@ -75,26 +83,33 @@
             </mat-card-content>
           </mat-card>
         </div>
+
+        <div fxFlex="35%" fxFlex.xs="100%">
+          <mat-card data-aos="zoom-in" data-aos-duration="700">
+            <mat-card-content>
+              x
+              x
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div fxFlex="35%" fxFlex.xs="100%" style="text-align: left;">
+          <p style="text-indent: 32px;">
+            ประวัติการศึกษา
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div fxFlex="100%" fxFlex.xs="100%" class="parallax">
-    <div class="content_section" style="color: #FFF;">
-      <h1 data-aos="zoom-in" data-aos-duration="400">พูดอะไรหน่อย</h1>
-      <h3 data-aos="zoom-in" data-aos-duration="600">Say Something</h3>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
+  <div fxFlex="100%" fxFlex.xs="100%" class="parallax2">
+    <div class="content_section">
+      <h1 data-aos="zoom-in" data-aos-duration="400">รางวัลและผลงาน</h1>
+      <h3 data-aos="zoom-in" data-aos-duration="600">Award</h3>
+      <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
+        <div fxFlex="35%" fxFlex.xs="100%">
+          Test
+        </div>
+      </div>
     </div>
   </div>
 </div>
