@@ -131,10 +131,11 @@
           </div>
         </div>
         <div class="scrolling-wrapper" *ngIf="!award_isLoad">
-          <mat-card class="mat-elevation-z0" *ngFor="let award of allaward" style="margin-right: 14px;">
-            <img mat-card-image class="card-header-image"
+          <mat-card class="mat-elevation-z0" *ngFor="let award of allaward"
+            style="margin-right: 14px;max-width: 350px;height: 90%;">
+            <img mat-card-image class="card-header-image" [ngClass]="{'first': award.id == 1}"
               [src]="'https://api.wutthiphon.space/app/public/images/content/award/' + award.image || '/assets/images/WoodyCH_Logo.png'"
-              style="max-height: 300px;">
+              style="height: 260px;">
             <mat-card-content fxLayoutAlign="center">
               <b>{{award.name}}</b>
             </mat-card-content>
@@ -179,10 +180,55 @@
       <h1 data-aos="zoom-in" data-aos-duration="400">เพลงที่ชอบ</h1>
       <h3 data-aos="zoom-in" data-aos-duration="600">Favroite Music</h3>
       <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
-        <div fxFlex="70%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
+        <!-- <div fxFlex="70%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
           Sore wa bokutachi no kiseki - µ's<br>
           Snow halation - µ's<br>
           Shonichi - AKB48 / BNK48<br>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="100%" fxFlex.xs="100%" class="parallax3">
+    <div class="content_section" style="color: #FFF;">
+      <h1 data-aos="zoom-in" data-aos-duration="400">โซเชี่ยลมีเดีย</h1>
+      <h3 data-aos="zoom-in" data-aos-duration="600">Soical Media</h3>
+      <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
+        <div fxFlex="50%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
+          <div class="section-component">
+            <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="4px grid" style="font-size: 14pt;">
+              <div fxFlex>
+                <a href="https://www.facebook.com/Wutthiphon.WoodyCH/" target="_blank" mat-stroked-button
+                  class="profile_btn full-width">
+                  <i class="fab fa-facebook"></i> Wutthiphon Tassana
+                </a>
+              </div>
+              <div fxFlex>
+                <a href="https://www.instagram.com/woody_wutthiphon/" target="_blank" mat-stroked-button
+                  class="profile_btn full-width">
+                  <i class="fab fa-instagram"></i> woody_wutthiphon
+                </a>
+              </div>
+              <div fxFlex>
+                <a href="https://www.youtube.com/c/WoodyCH" target="_blank" mat-stroked-button
+                  class="profile_btn full-width">
+                  <i class="fab fa-youtube"></i> WoodyCH
+                </a>
+              </div>
+              <div fxFlex>
+                <a href="https://github.com/Wutthiphon" target="_blank" mat-stroked-button
+                  class="profile_btn full-width">
+                  <i class="fab fa-github"></i> Wutthiphon
+                </a>
+              </div>
+              <div fxFlex>
+                <a href="https://github.com/WoodyCH-Dev" target="_blank" mat-stroked-button
+                  class="profile_btn full-width">
+                  <i class="fab fa-github"></i> WoodyCH Developer
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

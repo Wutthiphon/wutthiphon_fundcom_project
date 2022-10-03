@@ -36,6 +36,20 @@
   background-size: cover;
 }
 
+.parallax3 {
+  /* The image used */
+  background-color: #151515;
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header_section {
   height: 100vh !important;
   position: relative;
@@ -65,9 +79,11 @@ hr {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+
   -webkit-overflow-scrolling: touch;
 
   .mat-card {
     display: inline-block;
+    white-space: pre-wrap !important;
   }
 }
