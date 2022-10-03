@@ -4,22 +4,46 @@ import { ActivatedRoute } from '@angular/router';
 var articles = [
   {
     id: 1,
-    name: 'hello world',
-    description: 'hello world',
-    data: `<h1>Test</h1>`
+    name: 'ความเป็นมาของภาษา Typescript',
+    img: '',
+    description: 'บทความนี้จะพูดถึงเรื่องความเป็นมาของภาษา Typescript และเหตุผลที่ทำให้มันถูกสร้างขึ้นมา',
+    data: `<h1>ยังไม่ได้หาเนื้อหาครับ ใจเย็น ๆ</h1>`
   },
   {
     id: 2,
-    name: 'hello world',
-    description: 'hello world',
-    data: `<h1>Test</h1>`
+    name: 'อะไรคือ OSI Model ?',
+    img: '',
+    description: 'บทความนี้จะเกี่ยวกับเรื่อง OSI Model และการทำงานของเครือข่าย',
+    data: `<h1>ยังไม่ได้หาเนื้อหาครับ ใจเย็น ๆ</h1>`
   },
   {
     id: 3,
-    name: 'hello world',
-    description: 'hello world',
-    data: `<h1>Test</h1>`
-  }
+    name: 'ประวัติของระบบปฏิบัติการ Windows',
+    img: '',
+    description: 'บทความนี้จะพูดถึงเรื่องประวัติของระบบปฏิบัติการ Windows และเหตุผลที่ทำให้มันถูกสร้างขึ้นมา',
+    data: `<h1>ยังไม่ได้หาเนื้อหาครับ ใจเย็น ๆ</h1>`
+  },
+  {
+    id: 4,
+    name: 'ทำไมต้องใช้ Linux ?',
+    img: '',
+    description: 'บทความนี้จะพูดถึงเรื่องทำไมต้องใช้ Linux และเหตุผลที่ทำให้มันถูกสร้างขึ้นมา',
+    data: `<h1>ยังไม่ได้หาเนื้อหาครับ ใจเย็น ๆ</h1>`
+  },
+  {
+    id: 5,
+    name: 'Mainframe คืออะไร ?',
+    img: '',
+    description: 'บทความนี้จะพูดถึงเรื่อง Mainframe ว่าคืออะไร และการทำงานของมัน',
+    data: `<h1>ยังไม่ได้หาเนื้อหาครับ ใจเย็น ๆ</h1>`
+  },
+  {
+    id: 6,
+    name: 'กำเนิดภาษางูหลาม',
+    img: '',
+    description: 'บทความนี้จะพูดถึงเรื่องกำเนิดภาษา Python และเหตุผลที่ทำให้มันถูกสร้างขึ้นมา',
+    data: `<h1>ยังไม่ได้หาเนื้อหาครับ ใจเย็น ๆ</h1>`
+  },
 ];
 
 @Component({

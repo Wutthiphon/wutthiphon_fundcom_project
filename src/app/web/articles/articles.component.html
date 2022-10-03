@@ -6,10 +6,10 @@
       <hr width="38%" style="margin-top: 18px;margin-bottom: 18px;">
       <div fxLayout="row warp" fxLayoutGap="8px grid" fxLayoutAlign="center">
         <div fxFlex="25%" fxFlex.xs="100%" *ngFor="let act of articles_array">
-          <mat-card data-aos="zoom-in" data-aos-duration="800">
-            <mat-card-title>{{act.name}}</mat-card-title>
+          <mat-card data-aos="zoom-in" data-aos-duration="800" style="height: 93%" class="mat-elevation-z4">
             <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
               alt="Photo of a Shiba Inu">
+            <mat-card-title><b>{{act.name}}</b></mat-card-title>
             <mat-card-content>
               <p>
                 {{act.description}}

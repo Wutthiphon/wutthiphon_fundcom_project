@@ -1,18 +1,30 @@
 <div fxLayout="row warp" fxLayoutAlign="center">
   <div fxFlex="80%" fxFlex.xs="100%">
     <div class="content_section" style="text-align: left;" *ngIf="found_data">
-      <h3>
+      <div style="vertical-align: middle;margin-bottom: 15px;">
+        <button mat-button class="primary" routerLink="/articles" fxHide.lt-sm="true">
+          <mat-icon>arrow_back</mat-icon>
+          ย้อนกลับ
+        </button>
+        <b style="font-size: 18pt;"> {{article_data.name}}</b>
+      </div>
+
+      <div fxLayout="row warp" fxLayoutGap="8px grid" fxLayoutAlign="center">
+        <div fxFlex="100%" fxFlex.xs="100%">
+          <mat-card [innerHTML]="article_data.data" style="padding-top: 30px;padding-bottom: 30px;"
+            class="mat-elevation-z0"></mat-card>
+        </div>
+      </div>
+
+      <div align="center" style="margin-top: 15px;">
         <button mat-button class="primary" routerLink="/articles">
           <mat-icon>arrow_back</mat-icon>
           ย้อนกลับ
         </button>
-        {{article_data.name}}
-      </h3>
-
-      <div fxLayout="row warp" fxLayoutGap="8px grid" fxLayoutAlign="center">
-        <div fxFlex="100%" fxFlex.xs="100%">
-          <mat-card [innerHTML]="article_data.data"></mat-card>
-        </div>
+        <button mat-flat-button color="accent" routerLink="/" style="margin-left: 4px;">
+          <mat-icon>home</mat-icon>
+          หน้าหลัก
+        </button>
       </div>
     </div>
 

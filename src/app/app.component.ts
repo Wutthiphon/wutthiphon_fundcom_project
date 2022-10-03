@@ -29,6 +29,10 @@ export class AppComponent implements OnInit {
     });
   }
 
+  home_click() {
+    document.body.style.setProperty('--navbar-scroll', "transparent");
+  }
+
   scroll = (): void => {
     let scrollHeigth;
 
