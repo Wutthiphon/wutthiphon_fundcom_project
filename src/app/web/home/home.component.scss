@@ -56,7 +56,27 @@
 }
 
 .profile_image {
+  background: linear-gradient(
+    149deg,
+    rgba(27, 195, 134, 1) 0%,
+    rgba(153, 208, 154, 1) 69%,
+    rgba(0, 130, 91, 1) 100%
+  );
   border-radius: 25px;
+  padding: 9px;
+  box-sizing: border-box;
+}
+
+.profile_image2 {
+  background: linear-gradient(
+    149deg,
+    rgba(229, 103, 38, 1) 0%,
+    rgba(229, 163, 38, 1) 53%,
+    rgba(229, 211, 38, 1) 100%
+  );
+  border-radius: 25px;
+  padding: 9px;
+  box-sizing: border-box;
 }
 
 .profile_btn {
@@ -76,7 +96,7 @@ hr {
 }
 
 .scrolling-wrapper {
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
 
@@ -86,4 +106,36 @@ hr {
     display: inline-block;
     white-space: pre-wrap !important;
   }
+}
+
+.photobanner {
+  height: 233px;
+  width: 100%;
+}
+
+/*keyframe animations*/
+.first {
+  animation: bannermove 60s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -4600px;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

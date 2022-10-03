@@ -46,10 +46,12 @@
           <mat-card data-aos="zoom-in" data-aos-duration="700">
             <mat-card-content>
               <b style="font-size: 14pt;">Video แนะนำตนเอง</b>
-              <iframe src="https://www.youtube.com/embed/AqSRldOUEzM" title="YouTube video player" frameborder="0"
-                width="100%" height="100%"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen style="min-height: 350px;margin-top: 14px;"></iframe>
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/af76wrnDFrU" title="YouTube video player" frameborder="0"
+                  width="315" height="560"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
             </mat-card-content>
           </mat-card>
         </div>
@@ -72,11 +74,12 @@
     <div class="content_section" style="color: #FFF;">
       <h1 data-aos="zoom-in" data-aos-duration="400">ประวัติการศึกษา</h1>
       <h3 data-aos="zoom-in" data-aos-duration="600">Education</h3>
-      <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
-        <div fxFlex="35%" fxFlex.xs="100%" style="text-align: center;" data-aos="zoom-in" data-aos-duration="400">
-          IMG
+      <div fxLayout="row warp" fxLayoutAlign="center center" fxLayoutGap="8px grid">
+        <div fxFlex="35%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400" fxLayoutAlign="center">
+          <img src="./assets/images/profile/Wutthiphon_Taweetha.jpg" style="width: 100%;" fxFlex="70%" fxFlex.xs="100%"
+            class="profile_image">
         </div>
-        <div fxFlex="35%" fxFlex.xs="100%" style="text-align: left;">
+        <div fxFlex=" 35%" fxFlex.xs="100%" style="text-align: left;">
           <mat-card data-aos="zoom-in" data-aos-duration="700">
             <mat-card-content>
               <p style="font-size: 22pt;margin-bottom: 16px;"><b>มัธยมศึกษา</b></p>
@@ -92,6 +95,11 @@
           </mat-card>
         </div>
 
+        <div fxFlex="35%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400" fxHide.gt-md="true"
+          fxLayoutAlign="center">
+          <img src="./assets/images/profile/Wutthiphon_Kmutnb.png" style="width: 100%;" fxFlex="70%" fxFlex.xs="100%"
+            class="profile_image2">
+        </div>
         <div fxFlex="35%" fxFlex.xs="100%" style="text-align: left;">
           <mat-card data-aos="zoom-in" data-aos-duration="700">
             <mat-card-content>
@@ -101,19 +109,22 @@
                 <b>คณะ:</b> วิทยาศาสตร์ประยุกต์
                 <b>สาขา:</b> วิทยาการคอมพิวเตอร์
               </p>
-              <a mat-flat-button class="primary" href="https://kmutnb.ac.th" target="_blank">
+              <a mat-flat-button style="background-color: #e56726;" href="https://kmutnb.ac.th" target="_blank">
                 <mat-icon>open_in_new</mat-icon>
                 เว็บไซต์มหาวิทยาลัย
+              </a>
+              <a mat-flat-button style="background-color: #e56726;margin-left: 4px;" href="http://cs.kmutnb.ac.th"
+                target="_blank">
+                <mat-icon>open_in_new</mat-icon>
+                เว็บไซต์ภาควิชา
               </a>
             </mat-card-content>
           </mat-card>
         </div>
-        <div fxFlex="35%" fxFlex.xs="100%" style="text-align: center;" data-aos="zoom-in" data-aos-duration="400">
-          IMG
-        </div>
-
-        <div fxFlex="70%" fxFlex.xs="100%" style="text-align: center;" data-aos="zoom-in" data-aos-duration="400">
-          IMG รูปใหญ่
+        <div fxFlex=" 35%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400" fxHide.lt-md="true"
+          fxLayoutAlign="center">
+          <img src="./assets/images/profile/Wutthiphon_Kmutnb.png" style="width: 100%;" fxFlex="70%" fxFlex.xs="100%"
+            class="profile_image2">
         </div>
       </div>
     </div>
@@ -122,7 +133,7 @@
   <div fxFlex="100%" fxFlex.xs="100%" class="parallax2">
     <div class="content_section">
       <h1 data-aos="zoom-in" data-aos-duration="400">รางวัลและผลงาน</h1>
-      <h3 data-aos="zoom-in" data-aos-duration="600">Award</h3>
+      <h3 data-aos="zoom-in" data-aos-duration="600">Awards & achievements</h3>
       <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid" data-aos="zoom-in" data-aos-duration="800">
         <div *ngIf="award_isLoad">
           <div align="center">
@@ -131,13 +142,24 @@
           </div>
         </div>
         <div class="scrolling-wrapper" *ngIf="!award_isLoad">
-          <mat-card class="mat-elevation-z0" *ngFor="let award of allaward"
-            style="margin-right: 14px;max-width: 350px;height: 90%;">
-            <img mat-card-image class="card-header-image" [ngClass]="{'first': award.id == 1}"
+          <mat-card class="mat-elevation-z0" *ngFor="let award of allaward;let i = index"
+            style="margin-right: 14px;max-width: 350px;height: 90%;" [ngClass]="{'first': i == 0}">
+            <img mat-card-image class="card-header-image"
               [src]="'https://api.wutthiphon.space/app/public/images/content/award/' + award.image || '/assets/images/WoodyCH_Logo.png'"
               style="height: 260px;">
             <mat-card-content fxLayoutAlign="center">
-              <b>{{award.name}}</b>
+              <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="4px grid">
+                <div fxFlex="100%">
+                  <b>{{award.name}}</b>
+                </div>
+                <div fxFlex="100%">
+                  <a mat-flat-button class="primary" [href]="award.link" target="_blank"
+                    *ngIf="award.link != '' && award.link != null">
+                    <mat-icon>open_in_new</mat-icon>
+                    ตัวอย่างผลงาน
+                  </a>
+                </div>
+              </div>
             </mat-card-content>
           </mat-card>
         </div>
@@ -177,14 +199,45 @@
 
   <div fxFlex="100%" fxFlex.xs="100%" class="parallax2">
     <div class="content_section">
-      <h1 data-aos="zoom-in" data-aos-duration="400">เพลงที่ชอบ</h1>
-      <h3 data-aos="zoom-in" data-aos-duration="600">Favroite Music</h3>
+      <h1 data-aos="zoom-in" data-aos-duration="400">สิ่งที่ชอบ</h1>
+      <h3 data-aos="zoom-in" data-aos-duration="600">Favroite</h3>
       <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
-        <!-- <div fxFlex="70%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
-          Sore wa bokutachi no kiseki - µ's<br>
-          Snow halation - µ's<br>
-          Shonichi - AKB48 / BNK48<br>
-        </div> -->
+        <div fxFlex="23.33%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
+          <h2>
+            <mat-icon>stadium</mat-icon>
+            งานอดิเรก
+          </h2>
+          <b style="font-size: 12pt;">เขียน Website</b>
+          <p>โดยใช้ Framework และ Library หลาย ๆ อย่าง</p>
+          <b style="font-size: 12pt;">อ่านนิยาย / LightNovel</b>
+          <p>หากต้องการผ่อนคลายก็จะไปอ่านนิยายหรือ Lightnovel แทน</p>
+          <b style="font-size: 12pt;">เล่นเกมส์</b>
+          <p>พักสมองด้วยการเล่นเกมส์บ้างเป็นครั้งคราว แต่ส่วนใหญ่จะอ่านนิยายมากกว่า</p>
+        </div>
+        <div fxFlex="23.33%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
+          <h2>
+            <mat-icon>play_circle</mat-icon>
+            เพลง
+          </h2>
+          <b style="font-size: 12pt;">Sore wa bokutachi no kiseki - µ's</b>
+          <p>ชอบโดยส่วนตัว ที่ทำนองและบทเพลง</p>
+          <b style="font-size: 12pt;">Snow halation - µ's</b>
+          <p>เป็นเพลงที่ฟังสบาย ๆ ทำงานไปเรื่อย ๆ</p>
+          <b style="font-size: 12pt;">Shonichi - AKB48 / BNK48</b>
+          <p>เป็นเพลงที่ให้ความรู้สึกอยากลุกขึ้นสู้ พยายามทำงานต่อจนสำเร็จ</p>
+        </div>
+        <div fxFlex="23.33%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
+          <h2>
+            <mat-icon>menu_book</mat-icon>
+            นิยาย / Lightnovel
+          </h2>
+          <b style="font-size: 12pt;">Isekai wa smartphone tomo ni</b>
+          <p>ไปต่างโลกก็ต้องไปกับโทรศัพท์มือถือสิ</p>
+          <b style="font-size: 12pt;">Otonari no Tenshi-sama ni Itsu no Ma ni ka Dame Ningen ni Sareteita Ken</b>
+          <p>ขาดคุณนางฟ้าข้างห้องไป ผมคงมีชีวิตต่อไปไม่ได้อีกแล้ว</p>
+          <b style="font-size: 12pt;">Isekai Yakkyoku</b>
+          <p>เภสัชกรเทพสองโลก</p>
+        </div>
       </div>
     </div>
   </div>
@@ -196,36 +249,46 @@
       <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="8px grid">
         <div fxFlex="50%" fxFlex.xs="100%" data-aos="zoom-in" data-aos-duration="400">
           <div class="section-component">
-            <div fxLayout="row warp" fxLayoutAlign="center" fxLayoutGap="4px grid" style="font-size: 14pt;">
-              <div fxFlex>
-                <a href="https://www.facebook.com/Wutthiphon.WoodyCH/" target="_blank" mat-stroked-button
-                  class="profile_btn full-width">
-                  <i class="fab fa-facebook"></i> Wutthiphon Tassana
-                </a>
+            <div fxLayout="row warp" fxLayoutAlign="space-around center" fxLayoutGap="4px grid"
+              style="font-size: 14pt;">
+              <div fxFlex="60%" fxFlex.xs="100%">
+                <iframe src="https://discord.com/widget?id=375925982197972992&theme=dark" width="100%" height="300"
+                  allowtransparency="true" frameborder="0"
+                  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
               </div>
-              <div fxFlex>
-                <a href="https://www.instagram.com/woody_wutthiphon/" target="_blank" mat-stroked-button
-                  class="profile_btn full-width">
-                  <i class="fab fa-instagram"></i> woody_wutthiphon
-                </a>
-              </div>
-              <div fxFlex>
-                <a href="https://www.youtube.com/c/WoodyCH" target="_blank" mat-stroked-button
-                  class="profile_btn full-width">
-                  <i class="fab fa-youtube"></i> WoodyCH
-                </a>
-              </div>
-              <div fxFlex>
-                <a href="https://github.com/Wutthiphon" target="_blank" mat-stroked-button
-                  class="profile_btn full-width">
-                  <i class="fab fa-github"></i> Wutthiphon
-                </a>
-              </div>
-              <div fxFlex>
-                <a href="https://github.com/WoodyCH-Dev" target="_blank" mat-stroked-button
-                  class="profile_btn full-width">
-                  <i class="fab fa-github"></i> WoodyCH Developer
-                </a>
+              <div fxFlex="30%" fxFlex.xs="60%">
+                <div fxLayout="row warp" fxLayoutGap="8px grid" style="font-size: 14pt;">
+                  <div fxFlex="100%">
+                    <a href="https://www.facebook.com/Wutthiphon.WoodyCH/" target="_blank" mat-stroked-button
+                      class="profile_btn full-width">
+                      <i class="fab fa-facebook"></i> Wutthiphon Tassana
+                    </a>
+                  </div>
+                  <div fxFlex="100%">
+                    <a href="https://www.instagram.com/woody_wutthiphon/" target="_blank" mat-stroked-button
+                      class="profile_btn full-width">
+                      <i class="fab fa-instagram"></i> woody_wutthiphon
+                    </a>
+                  </div>
+                  <div fxFlex="100%">
+                    <a href="https://www.youtube.com/c/WoodyCH" target="_blank" mat-stroked-button
+                      class="profile_btn full-width">
+                      <i class="fab fa-youtube"></i> WoodyCH
+                    </a>
+                  </div>
+                  <div fxFlex="100%">
+                    <a href="https://github.com/Wutthiphon" target="_blank" mat-stroked-button
+                      class="profile_btn full-width">
+                      <i class="fab fa-github"></i> Wutthiphon
+                    </a>
+                  </div>
+                  <div fxFlex="100%">
+                    <a href="https://github.com/WoodyCH-Dev" target="_blank" mat-stroked-button
+                      class="profile_btn full-width">
+                      <i class="fab fa-github"></i> WoodyCH Developer
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -233,4 +296,3 @@
       </div>
     </div>
   </div>
-</div>
