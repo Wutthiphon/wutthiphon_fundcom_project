@@ -1,4 +1,4 @@
-<mat-toolbar class="app-toolbar mat-elevation-z0">
+<mat-toolbar class="app-toolbar ">
   <div fxShow=" true" fxHide.gt-sm="true">
     <button mat-icon-button (click)="sidenav.toggle();color_change()">
       <mat-icon>menu</mat-icon>
@@ -8,7 +8,7 @@
   <span class="companyName">&nbsp; WUTTHIPHON</span>
   <span class="web-spacer"></span>
   <div fxShow="true" fxHide.lt-md="true">
-    <a mat-button class="toolbar-button" routerLink="/">
+    <a mat-button class="toolbar-button" routerLink="/" (click)="home_click()">
       <span class="material-icons-outlined">home</span>
       หน้าแรก | ประวัติส่วนตัว
     </a>
@@ -26,7 +26,7 @@
   <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true"
     class="sidenav-link" (click)="sidenav.toggle()" style="width: 60%;">
     <div fxLayout="column">
-      <a mat-button class="sidebar-button" routerLink="/">
+      <a mat-button class="sidebar-button" routerLink="/" (click)="home_click()">
         <span class="material-icons">home</span> หน้าแรก | ประวัติส่วนตัว
       </a>
       <a mat-button class="sidebar-button" routerLink="/articles">
