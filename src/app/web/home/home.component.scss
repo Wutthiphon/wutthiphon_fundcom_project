@@ -96,7 +96,7 @@ hr {
 }
 
 .scrolling-wrapper {
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 
@@ -111,20 +111,6 @@ hr {
 .photobanner {
   height: 233px;
   width: 100%;
-}
-
-/*keyframe animations*/
-.first {
-  animation: bannermove 60s linear infinite;
-}
-
-@keyframes bannermove {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: -4600px;
-  }
 }
 
 .video-container {
