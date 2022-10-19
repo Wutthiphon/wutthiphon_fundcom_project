@@ -242,7 +242,7 @@ var articles = [
 
   <p class="articales">
     <b>Windows Millennium Edition หรือ Windows ME (2000)</b>
-    <p class="center"><img src="./assets/images/articles/WindowsME.jpg" class="responsive3" /></p>
+    <p class="center"><img src="./assets/images/articles/WindowsME.png" class="responsive3" /></p>
     <p class="articales">
       Windows ME เป็นระบบปฏิบัติการพื้นฐาน DOS ตัวสุดท้ายของ Microsoft ซึ่งทางบริษัท ได้จำกัดการเข้าใช้งาน DOS-mode ในระบบปฏิบัติการ เพื่อเหตุผลทางด้านความเสถียรในการใช้งาน ทว่านี้ถือว่าเป็นข้อผิดพลาดอย่างหนึ่งของ Windows ME เนื่องจากมีหลายโปรแกรมที่ต้องใช้งาน DOS ส่งผลให้โปรแรกมเหล่านั้นไม่สามารถทำงานได้ หรือไม่สมบูรณ์ ผมเพิ่มเติมให้อีกเล็กน้อย สาเหตุที่ Windows ME น่าจะได้รับความนิยมน้อยอีกอย่างหนึ่งคือ ปัญหาในเรื่องไดรเวอร์ แม้ว่ามันจะมีพื้นฐานจาก Windows 98 แต่กลับเปลี่ยนไปใช้โครงสร้างไดรเวอร์เหมือน Windows 2000 ส่งผลให้การทำงานไดรเวอร์ไม่ค่อยมีประสิทธิภาพเท่าที่ควร
     </p>
@@ -258,7 +258,7 @@ var articles = [
 
   <p class="articales">
     <b>Windows Vista (2006)</b>
-    <p class="center"><img src="./assets/images/articles/WindowsVista.png" class="responsive3" /></p>
+    <p class="center"><img src="./assets/images/articles/WindowsVista.jpg" class="responsive3" /></p>
     <p class="articales">
       หลังจาก Windows XP ครองตำแหน่งมาได้หลายปี ในปี 2006 Microsoft ได้เปิดตัว Windows Vista โดยมีการปรับปรุงในเรื่องของอินเตอร์เฟสให้สวยงามมากขึ้น พร้อมกับระบบความปลอดภัยให้กับ Windows Vista แต่มันคือจุดที่เป็นข้อครหาให้กับ Windows Vista นั่นเอง เนื่องจากการต้องการความปลอดภัยสูง โปรแกรมที่รันบน Windows Vista จะอยู่ในโหมดที่ไม่ใช่ Administrator ทำให้การทำงานของโปรแกรมอาจไม่สมบูรณ์เท่าที่ควร และเมื่อมีการปรับแต่งการตั้งค่าอะไร จะต้องถามถึงการเข้าใช้งานในส่วน Administrator ตลอด นอกจากนี้ ในช่วงนั้นคอมพิวเตอร์ยังติดอยู่สเปคเดิมของ Windows XP ทำให้คอมสเปคเดิมๆ ไม่สามารถรัน Windows Vista ได้อย่างดีเท่าไรนัก จริงๆ มันไม่ได้ผิดที่ตัวระบบปฏิบัติการนะ แต่มันต้องการคอมแรงๆ ไว้รันเท่านั้นเอง ซึ่งในสมัยนั้นมันถือว่าเป็นสเปคที่สูงพอสมควร ผลสุดท้ายคือ Windows Vista ก็แห้วไป ไม่ได้ดังเท่า Windows XP
     </p>
